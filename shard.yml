@@ -1,0 +1,24 @@
+name: synci_backend
+version: 0.1.0
+
+authors:
+  - zeratax <mail@zera.tax>
+
+description: |
+  Backend for https://github.com/zeratax/synci
+
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+    commit: a8c0f09b858162bd13c96663febef5527b322a32
+  swagger:
+    github: icyleaf/swagger
+
+targets:
+  synci_backend:
+    main: src/synci_backend.cr
+
+crystal: 0.35.1
+
+license: MIT
