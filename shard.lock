@@ -6,7 +6,7 @@ shards:
 
   kemal:
     git: https://github.com/kemalcr/kemal.git
-    version: 0.26.1+git.commit.a8c0f09b858162bd13c96663febef5527b322a32
+    version: 0.26.1+git.commit.dfe7dca08f4c9a9456d6132af5f6b59fcd6865e4
 
   kilt:
     git: https://github.com/jeromegn/kilt.git
@@ -15,8 +15,4 @@ shards:
   radix:
     git: https://github.com/luislavena/radix.git
     version: 0.3.9
-
-  swagger:
-    git: https://github.com/icyleaf/swagger.git
-    version: 0.2.1
 

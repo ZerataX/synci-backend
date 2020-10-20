@@ -11,9 +11,7 @@ description: |
 dependencies:
   kemal:
     github: kemalcr/kemal
-    commit: a8c0f09b858162bd13c96663febef5527b322a32
-  swagger:
-    github: icyleaf/swagger
+    commit: dfe7dca08f4c9a9456d6132af5f6b59fcd6865e4
 
 targets:
   synci_backend:
