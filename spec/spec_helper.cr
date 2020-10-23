@@ -1,2 +1,2 @@
 require "spec"
-require "../src/synci_backend"
+require "../src/websocket"
