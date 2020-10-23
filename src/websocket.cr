@@ -146,5 +146,16 @@ ws "/session/:name" do |socket, context|
   socket.on_close do
     session.delete(user)
     send_to_all(session, uuid, Message.new type: "remove_user", id: uuid.to_s)
+    # if host leaves, remove session if nobody left, or use first in line as new host
+    if user == host
+      if session.empty?
+        sessions.delete(name)
+      else
+        hosts[name] = session.first
+        host = hosts[name]
+        send_to_all(session, uuid, Message.new type: "new_host", id: message.data["id"].to_s)
+      end
+    end
+    
   end
 end  
